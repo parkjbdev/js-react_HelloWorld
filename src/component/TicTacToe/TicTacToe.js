@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import './TicTacToe.css';
 
 class Square extends React.Component {
 	render() {
@@ -53,14 +53,12 @@ class Game extends React.Component {
 					<div>{/* status */}</div>
 					<ol>{/* TODO */}</ol>
 				</div>
+				<div>
+					<a href="https://ko.reactjs.org/tutorial/tutorial.html#setup-option-1-write-code-in-the-browser">자습서: React 시작하기</a>
+				</div>
 			</div>
 		);
 	}
 }
 
-// ========================================
-
-// ReactDOM.render(
-// 	<Game />,
-// 	document.getElementById('root')
-// );
+export default Game;
