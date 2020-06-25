@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6be77e6c-5122-41e1-93c3-83f8c9cccbca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/ch05/ch05.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TicTacToe/TicTacToe.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TicTacToe/TicTacToe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TicTacToe/TicTacToe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TicTacToe/TicTacToe.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +49,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -52,6 +75,16 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -62,6 +95,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -76,37 +114,56 @@
       <updated>1593006149415</updated>
       <workItem from="1593006150476" duration="512000" />
       <workItem from="1593006888272" duration="3842000" />
-      <workItem from="1593051786454" duration="557000" />
+      <workItem from="1593051786454" duration="5310000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1362" height="266" key="GridCell.Tab.0.bottom" timestamp="1593052185774">
+    <state x="827" y="959" key="#ESLint" timestamp="1593053784492">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
-    <state width="1362" height="266" key="GridCell.Tab.0.bottom/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593052185774" />
+    <state x="827" y="959" key="#ESLint/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593053784492" />
+    <state width="1896" height="266" key="GridCell.Tab.0.bottom" timestamp="1593056505954">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state width="1896" height="266" key="GridCell.Tab.0.bottom/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593056505954" />
     <state width="2284" height="638" key="GridCell.Tab.0.bottom/3840.1080.1920.1050/0.0.3840.2130@0.0.3840.2130" timestamp="1593013415915" />
-    <state width="1362" height="266" key="GridCell.Tab.0.center" timestamp="1593052185774">
+    <state width="1896" height="266" key="GridCell.Tab.0.center" timestamp="1593056505954">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
-    <state width="1362" height="266" key="GridCell.Tab.0.center/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593052185774" />
+    <state width="1896" height="266" key="GridCell.Tab.0.center/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593056505954" />
     <state width="2284" height="638" key="GridCell.Tab.0.center/3840.1080.1920.1050/0.0.3840.2130@0.0.3840.2130" timestamp="1593013415914" />
-    <state width="1362" height="266" key="GridCell.Tab.0.left" timestamp="1593052185774">
+    <state width="1896" height="266" key="GridCell.Tab.0.left" timestamp="1593056505954">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
-    <state width="1362" height="266" key="GridCell.Tab.0.left/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593052185774" />
+    <state width="1896" height="266" key="GridCell.Tab.0.left/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593056505954" />
     <state width="2284" height="638" key="GridCell.Tab.0.left/3840.1080.1920.1050/0.0.3840.2130@0.0.3840.2130" timestamp="1593013415914" />
-    <state width="1362" height="266" key="GridCell.Tab.0.right" timestamp="1593052185774">
+    <state width="1896" height="266" key="GridCell.Tab.0.right" timestamp="1593056505954">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
-    <state width="1362" height="266" key="GridCell.Tab.0.right/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593052185774" />
+    <state width="1896" height="266" key="GridCell.Tab.0.right/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593056505954" />
     <state width="2284" height="638" key="GridCell.Tab.0.right/3840.1080.1920.1050/0.0.3840.2130@0.0.3840.2130" timestamp="1593013415915" />
     <state x="1311" y="442" key="SettingsEditor" timestamp="1593052103234">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
     <state x="1311" y="442" key="SettingsEditor/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593052103234" />
+    <state x="623" y="503" key="search.everywhere.popup" timestamp="1593053231438">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state x="623" y="503" key="search.everywhere.popup/-1080.0.1080.1890/0.0.3840.2130@0.0.3840.2130" timestamp="1593053231438" />
   </component>
 </project>
