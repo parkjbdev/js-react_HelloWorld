@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/js-react_HelloWorld/static/css/main.99142bc0.chunk.css",
+    "main.js": "/js-react_HelloWorld/static/js/main.e8f8acea.chunk.js",
+    "main.js.map": "/js-react_HelloWorld/static/js/main.e8f8acea.chunk.js.map",
+    "runtime-main.js": "/js-react_HelloWorld/static/js/runtime-main.595933bc.js",
+    "runtime-main.js.map": "/js-react_HelloWorld/static/js/runtime-main.595933bc.js.map",
+    "static/js/2.9c6eb735.chunk.js": "/js-react_HelloWorld/static/js/2.9c6eb735.chunk.js",
+    "static/js/2.9c6eb735.chunk.js.map": "/js-react_HelloWorld/static/js/2.9c6eb735.chunk.js.map",
+    "index.html": "/js-react_HelloWorld/index.html",
+    "precache-manifest.f8fb1ff681f527f33f7fd76825bcb71f.js": "/js-react_HelloWorld/precache-manifest.f8fb1ff681f527f33f7fd76825bcb71f.js",
+    "service-worker.js": "/js-react_HelloWorld/service-worker.js",
+    "static/css/main.99142bc0.chunk.css.map": "/js-react_HelloWorld/static/css/main.99142bc0.chunk.css.map",
+    "static/js/2.9c6eb735.chunk.js.LICENSE.txt": "/js-react_HelloWorld/static/js/2.9c6eb735.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/js-react_HelloWorld/static/media/logo.ee7cd8ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.595933bc.js",
+    "static/js/2.9c6eb735.chunk.js",
+    "static/css/main.99142bc0.chunk.css",
+    "static/js/main.e8f8acea.chunk.js"
+  ]
+}
