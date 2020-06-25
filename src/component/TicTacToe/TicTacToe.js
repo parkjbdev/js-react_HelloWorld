@@ -1,69 +1,28 @@
 import React from 'react';
 import './TicTacToe.css';
 
-class Square extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			value: null,
-		}
-	}
-	render() {
-		return (
-			<button
-				className="square"
-				onClick={() => {this.props.onClick()}}
-			>
-				{this.props.value}
-			</button>
-		);
-	}
+function Square(props) {
+	return (
+		<button
+			className="square"
+			onClick={props.onClick}
+		>
+			{props.value}
+		</button>
+	);
 }
 
 class Board extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			squares: Array(9).fill(null),
-			turn: 'X',
-		}
-	}
-
-	nextTurn() {
-		if(this.state.turn === 'X')	this.setState({turn: 'O'});
-		else if(this.state.turn === 'O')	this.setState({turn: 'X'});
-	}
-
-	handleClick(squareNum) {
-		const squares = this.state.squares.slice();
-
-		if(checkWinner(squares))	return;
-		if(squares[squareNum] == null)
-		{
-			squares[squareNum] = this.state.turn;
-			this.nextTurn();
-		}
-		else alert("안돼 돌아가");
-
-		this.setState({squares: squares});
-	}
-
 	renderSquare(i) {
 		return <Square
-			value={this.state.squares[i]}
-			onClick={() => this.handleClick(i)}
+			value={this.props.squares[i]}
+			onClick={() => this.props.onClick(i)}
 		/>;
 	}
 
 	render() {
-		let status;
-		const winner = checkWinner(this.state.squares);
-		if(winner)	status = 'Winner: ' + winner;
-		else	status = 'Next player: ' + this.state.turn;
-
 		return (
 			<div>
-				<div className="status">{status}</div>
 				<div className="board-row">
 					{this.renderSquare(0)}
 					{this.renderSquare(1)}
@@ -103,6 +62,13 @@ function checkWinner(squares) {
 	}
 	return null;
 }
+function checkFull(squares) {
+	let cnt = 0;
+	for(let i = 0;i < squares.length;i++)
+		if(squares[i])	cnt++;
+
+	if(cnt === squares.length)	return true;
+}
 
 class Game extends React.Component {
 	constructor(props) {
@@ -114,22 +80,63 @@ class Game extends React.Component {
 			turn: 'X',
 		}
 	}
+
+	nextTurn() {
+		if(this.state.turn === 'X')	this.setState({turn: 'O'});
+		else if(this.state.turn === 'O')	this.setState({turn: 'X'});
+		this.setState({turnCount: this.state.turnCount + 1});
+	}
+
+	handleClick(squareID) {
+		const history = this.state.history;
+		const current = history[history.length - 1];
+		const squares = current.squares.slice();
+
+		if(checkWinner(squares) || checkFull(squares))	return;
+
+		if(!squares[squareID]) {
+			squares[squareID] = this.state.turn;
+			this.nextTurn();
+			this.setState({
+				history: history.concat([{
+					squares: squares
+				}]),
+			});
+		}
+		else	alert("안돼여");
+
+		const winner = checkWinner(squares);
+		if(winner)	alert('Winner: ' + winner);
+		else if(checkFull(squares))	alert("Draw");
+	}
+
 	render() {
+		const history = this.state.history;
+		const current = history[history.length - 1];
+		const winner = checkWinner(current.squares);
+
+		let status;
+		if(winner)	status = 'Winner: ' + winner;
+		else status = 'Next player: ' + this.state.turn;
+		if(checkFull(current.squares))	status = 'Draw!';
+
 		return (
 			<div className="game">
 				<div className="game-board">
-					<Board />
+					<Board
+						squares={current.squares}
+						onClick={(i) => this.handleClick(i)}
+					/>
 				</div>
 				<div className="game-info">
-					<div>{/* status */}</div>
+					<div>{status}</div>
 					<ol>{/* TODO */}</ol>
-				</div>
-				<div>
-					<a href="https://ko.reactjs.org/tutorial/tutorial.html#setup-option-1-write-code-in-the-browser">자습서: React 시작하기</a>
 				</div>
 			</div>
 		);
 	}
 }
+
+// https://ko.reactjs.org/tutorial/tutorial.html#setup-option-1-write-code-in-the-browser
 
 export default Game;
