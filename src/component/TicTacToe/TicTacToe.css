@@ -22,15 +22,15 @@
     background: #fff;
     border: 1px solid #999;
     float: left;
-    font-size: 240px;
+    font-size: 72px;
     font-weight: bold;
     line-height: 34px;
-    height: 340px;
+    height: 102px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 340px;
+    width: 102px;
 }
 
 .square:focus {
