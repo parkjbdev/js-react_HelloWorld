@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "210521adc49998876a77d82cca9b6495",
+    "revision": "b1f44d0f0c03a097409a4c65946893f6",
     "url": "/js-react_HelloWorld/index.html"
   },
   {
-    "revision": "e90ff649fbfcf58614fa",
-    "url": "/js-react_HelloWorld/static/css/main.99142bc0.chunk.css"
+    "revision": "e63b72eb40a1078e9360",
+    "url": "/js-react_HelloWorld/static/css/main.91fbc2f8.chunk.css"
   },
   {
     "revision": "dba47c9d2f2f2aea5deb",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js-react_HelloWorld/static/js/2.9c6eb735.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e90ff649fbfcf58614fa",
-    "url": "/js-react_HelloWorld/static/js/main.e8f8acea.chunk.js"
+    "revision": "e63b72eb40a1078e9360",
+    "url": "/js-react_HelloWorld/static/js/main.5bb607df.chunk.js"
   },
   {
     "revision": "5ef5191b61ad34c13fcd",
