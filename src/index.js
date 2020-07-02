@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './component/DefaultApp/App';
 // import Game from './component/TicTacToe/TicTacToe';
-import App from './component/ch05/ch05'
+import MovieApp from './component/MovieApp/MovieApp'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
-        {/*<Game />*/}
+        <MovieApp />
     </React.StrictMode>,
     document.getElementById('root')
 );
