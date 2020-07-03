@@ -1,6 +1,6 @@
 import React from "react";
-import './MovieApp.css';
-// import 'bootstrap/dist/css/bootstrap.css'
+import '../../css/MovieApp/MovieApp.css';
+import 'bootstrap/dist/css/bootstrap.css'
 import PuffLoader from "react-spinners/PuffLoader"
 import axios from 'axios';
 import Movie from "./Movie";
@@ -34,14 +34,17 @@ class MovieApp extends React.Component {
         const {isLoading, movies} = this.state;
 
         return (
-            <div>
+            <section className="container">
                 {
                     isLoading ?
-                        <div className="loader">
+                        (<div className="loader">
                             <PuffLoader className={"loader"} size={150} color={"#123abc"}
                                         loading={this.state.isLoading}/>
-                        </div>
-                        : movies.map((movie) => {
+                        </div>)
+                        :
+                        (<div className="movies row">
+                        {
+                            movies.map(movie => {
                             console.log(movie);
                             return <Movie
                                 key={movie.id}
@@ -50,9 +53,11 @@ class MovieApp extends React.Component {
                                 year={movie.year}
                                 id={movie.id}
                                 title={movie.title} />
-                        })
+                            })
+                        }
+                        </div>)
                 }
-            </div>
+            </section>
         );
     };
 }

@@ -1,20 +1,23 @@
 import React from "react";
 import PropTypes from 'prop-types'
+import '../../css/MovieApp/MovieApp.css';
+import 'bootstrap/dist/css/bootstrap.css'
 
-function Movie({ id, title, year, summary, poster }) {
+function Movie({ title, year, summary, poster }) {
     return (
-        <div>
-            <h1>{title}</h1>
-            <h2>{year}</h2>
-            <p>{summary}</p>
-            <img src={poster} alt="poster"/>
+        <div className="card movieBox" style={{width: "18rem"}}>
+            <div className={"card-body"}>
+                <img className="card-img" src={poster} alt={title}/>
+                <h2 className={"card-title name"}>{title}</h2>
+                <h3 className={"card-title"}>{year}</h3>
+                <p className={"card-text"}>{summary.slice(0,180)}...</p>
+            </div>
         </div>
     )
 
 }
 
 Movie.propTypes = {
-    id: PropTypes.number.isRequired,
     year: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired,
