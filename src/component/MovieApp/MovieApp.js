@@ -45,7 +45,6 @@ class MovieApp extends React.Component {
                         (<div className="movies row">
                         {
                             movies.map(movie => {
-                            console.log(movie);
                             return <Movie
                                 key={movie.id}
                                 poster={movie.medium_cover_image}

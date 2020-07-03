@@ -1,11 +1,8 @@
 .container {
+  display: flex;
+  justify-content: center;
   .loader {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .movies {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,11 +10,8 @@
 }
 
 .movieBox {
-  width: 33%;
-  display: block;
+  width: 20%;
   margin: 30px;
-  border: 2px black;
-  background-color: #d6d6d6;
   font-weight: 300;
   img {
     position: relative;

@@ -1,20 +1,15 @@
-.container .loader {
-  height: 100vh;
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.container .movies {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
+  .container .loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .movieBox {
-  width: 33%;
-  display: block;
+  width: 20%;
   margin: 30px;
-  border: 2px black;
-  background-color: #d6d6d6;
   font-weight: 300; }
   .movieBox img {
     position: relative;
